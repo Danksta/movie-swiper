@@ -39,15 +39,15 @@ const createDefaultStackNavigator = (screensObject: any, customOptions?: any) =>
 /* ------------- Navigation ------------- */
 const BottomTabs = createBottomTabNavigator(
   {
+    [tabNames.explore]: {
+      screen: createDefaultStackNavigator({ [tabNames.explore]: ExploreScreen }),
+    },
     [tabNames.browse]: {
       screen: createDefaultStackNavigator({
         [tabNames.browse]: BrowseScreen,
         [routeNames.SectionListScreen]: SectionListScreen,
         [routeNames.MovieDetailsScreen]: MovieDetailsScreen,
       }),
-    },
-    [tabNames.explore]: {
-      screen: createDefaultStackNavigator({ [tabNames.explore]: ExploreScreen }),
     },
     [tabNames.library]: {
       screen: createDefaultStackNavigator({
