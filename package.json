@@ -1,5 +1,5 @@
 {
-  "name": "movie_swiper",
+  "name": "swypeflix",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,12 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
     "@react-native-community/netinfo": "^5.3.3",
+    "@react-navigation/material-top-tabs": "^5.2.17",
+    "@react-navigation/native": "^5.0.5",
     "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "fsevents": "^2.1.2",
     "hoist-non-react-statics": "^3.3.2",
     "lodash": "^4.17.19",
@@ -22,15 +27,19 @@
     "moment": "^2.24.0",
     "react": "16.9.0",
     "react-native": "^0.63.2",
+    "react-native-animated-splash-screen": "^2.0.5",
     "react-native-bootsplash": "^2.2.4",
     "react-native-fast-image": "^7.0.2",
     "react-native-gesture-handler": "^1.4.0",
+    "react-native-iap": "^4.6.3",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-reanimated": "^1.7.1",
     "react-native-redash": "^14.1.1",
     "react-native-screens": "^2.11.0",
     "react-native-status-bar-height": "^2.4.0",
+    "react-native-tab-view": "^2.15.1",
     "react-native-vector-icons": "6.6.0",
+    "react-native-web": "^0.13.14",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
     "react-navigation-tabs": "^2.5.6",
@@ -42,7 +51,9 @@
     "reselect": "^4.0.0",
     "throttle-debounce": "^2.1.0",
     "uuid": "^3.4.0",
-    "validator": "^12.2.0"
+    "validator": "^12.2.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -76,7 +87,8 @@
     "reactotron-redux": "^3.1.2",
     "reactotron-redux-saga": "^4.2.3",
     "redux-devtools-extension": "^2.13.8",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "webpack-dev-server": "^3.11.0"
   },
   "husky": {
     "hooks": {

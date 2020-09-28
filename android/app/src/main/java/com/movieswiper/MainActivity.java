@@ -1,4 +1,4 @@
-package com.azhavrid.movieswiperr;
+package com.jaarx.swypeflix;
 
 import android.os.Bundle;
 
@@ -16,7 +16,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "MovieSwiper";
+    return "swypeflix";
   }
 
   @Override

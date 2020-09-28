@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { exploreMoviesLoadRequest, exploreMovieSwiped } from '../../redux/explore/actions';
 import { exploreMovieIdsWithLoadedPosterSelector } from '../../redux/explore/selectors';
 import { RootState } from '../../redux/types';
+import { SwiperTop } from './ExploreMovieDeckComponents';
+import SwiperBottom from './ExploreMovieDeckComponents';
 import MovieDeck from './MovieDeck';
 
 /* ------------- Props and State ------------- */
@@ -43,12 +45,19 @@ class ExploreMovieDeck extends React.PureComponent<Props> {
 
     return (
       <>
+        <SwiperTop />
         <MovieDeck
           movieIds={movieIds}
           onSwipedTop={this.onSwipedTop}
           onSwipedLeft={this.onSwipedLeft}
           onSwipedRight={this.onSwipedRight}
         />
+        <SwiperBottom
+          onSwipedTop={this.onSwipedTop}
+          onSwipedLeft={this.onSwipedLeft}
+          onSwipedRight={this.onSwipedLeft}
+        />
+
         <NavigationEvents onDidFocus={this.onDidFocus} />
       </>
     );

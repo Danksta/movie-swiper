@@ -1,7 +1,7 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator, StackActions } from 'react-navigation';
 import { createStackNavigator, NavigationStackOptions } from 'react-navigation-stack';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
 import Header from '../components/Header';
 import NavbarButtonWrapper from '../components/NavbarButtonWrapper';
@@ -11,6 +11,7 @@ import { getNavbarBrowseIcon, getNavbarExploreIcon, getNavbarLibraryIcon } from 
 import AuthLogin from '../screens/auth/AuthLogin';
 import AuthWelcome from '../screens/auth/AuthWelcome';
 import BrowseScreen from '../screens/BrowseScreen';
+import DonateScreen from '../screens/DonateScreen';
 import ExploreScreen from '../screens/ExploreScreen';
 import LibraryScreen from '../screens/LibraryScreen';
 import MovieDetailsScreen from '../screens/movie/MovieDetailsScreen';
@@ -21,7 +22,6 @@ import { theme } from '../theme';
 import { getFontStyle } from '../utils/fonts';
 import { routeNames, tabNames } from './routeNames';
 import { fromRightWithFade } from './transitions';
-
 /* ------------- Helpers ------------- */
 const defaultHeaderObject: NavigationStackOptions = {
   header: props => <Header scene={props.scene} />,
@@ -40,7 +40,8 @@ const createDefaultStackNavigator = (screensObject: any, customOptions?: any) =>
 const BottomTabs = createBottomTabNavigator(
   {
     [tabNames.explore]: {
-      screen: createDefaultStackNavigator({ [tabNames.explore]: ExploreScreen }),
+      //screen: createDefaultStackNavigator({ [tabNames.explore]: ExploreScreen }),
+      screen: createMaterialTopTabNavigator({ Home: { screen: ExploreScreen }, TVShows: { screen: DonateScreen } }),
     },
     [tabNames.browse]: {
       screen: createDefaultStackNavigator({

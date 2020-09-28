@@ -12,6 +12,7 @@ type Props = NavigationStackScreenProps<{}>;
 /* ------------- Component ------------- */
 class Browse extends React.Component<Props> {
   render() {
+    // @ts-ignore
     return (
       <ScreenWrapper>
         <MovieSearchWrapper>

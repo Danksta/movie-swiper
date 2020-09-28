@@ -51,7 +51,7 @@ class AuthWelcome extends React.Component<Props> {
           <View style={styles.topContainer}>
             <FastImage style={styles.appLogo} source={images.appLogo} resizeMode="contain" />
             <AppText style={styles.welcomeText} type="title1">
-              Welcome to Movie Swiper
+              Welcome to SwypeFlix
             </AppText>
             <AppText style={styles.welcomeCaption} type="titleCaption">
               Powered by The Movie Database

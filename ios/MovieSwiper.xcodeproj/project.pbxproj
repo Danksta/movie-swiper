@@ -402,7 +402,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azhavrid.movieswiperr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaarx.swypeflix;
 				PRODUCT_NAME = "Movie Swiper";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -423,7 +423,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azhavrid.movieswiperr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaarx.swypeflix;
 				PRODUCT_NAME = "Movie Swiper";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
